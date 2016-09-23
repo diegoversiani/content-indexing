@@ -17,7 +17,7 @@
 
   <%= form_tag(stored_content_create_path, method: :get) do |f| %>
     <%= label_tag :url %>
-    <%= text_field_tag :url %>
+    <%= text_field_tag :url, nil, placeholder: 'http://google.com', required: true %>
     <%= submit_tag 'Store content' %>
   <% end %>
 </p>
