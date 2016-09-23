@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'stored_content/store'
+  get 'stored_content/create'
   get 'stored_content' => 'stored_content#list'
 
   # The priority is based upon order of creation: first created -> highest priority.
