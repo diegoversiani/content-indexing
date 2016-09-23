@@ -1,0 +1,23 @@
+<h1>Welcome to Content Indexing API</h1>
+
+<p>The API provides ways to store and retrieve specific content from publicly available pages in the internet. Content in tags H1, H2, H3 and A (links) will be stored.</p>
+<p>See documentation at <a href="http://github.com/diegoversiani/content-indexing">http://github.com/diegoversiani/content-indexing</a></p>
+
+<p>If you want to see the API in action, call the actions bellow:</p>
+
+<h3>Actions:</h3>
+
+<p>
+  <code>Retrieve</code> stored content:<br>
+  <%= link_to 'Call action', stored_content_path %>
+</p>
+
+<p>
+  <code>Store</code> content from url:<br>
+
+  <%= form_tag(stored_content_create_path, method: :get) do |f| %>
+    <%= label_tag :url %>
+    <%= text_field_tag :url %>
+    <%= submit_tag 'Store content' %>
+  <% end %>
+</p>

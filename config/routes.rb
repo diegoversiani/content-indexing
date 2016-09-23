@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'welcome#index'
+
   get 'stored_content/create'
   get 'stored_content' => 'stored_content#list'
 
